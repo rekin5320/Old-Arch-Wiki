@@ -3,7 +3,7 @@
   "name": "Old Arch Wiki",
   "version": "2.0.0",
 
-  "description": "Automatically applies the useskinversion=1 parameter to all Arch Wiki URLs",
+  "description": "Automatically adds the useskinversion=1 parameter to all Arch Wiki URLs to enable the good old full-width layout",
 
   "content_scripts": [
     {
