@@ -11,12 +11,11 @@ document.querySelector("#submitButton").addEventListener('click', function() {
     const minCheck = document.querySelector("#minWidthCheck").checked || defaultCheckState;
     const maxWidth = document.querySelector("#maxWidth").value || defaultMaxWidth;
     const maxCheck = document.querySelector("#maxWidthCheck").checked || defaultCheckState;
-    browser.storage.sync.set({minWidth, maxWidth, minCheck, maxCheck});
+    chrome.storage.sync.set({minWidth, maxWidth, minCheck, maxCheck});
 });
 
 let defaultMinWidth = 960;
 let defaultMaxWidth = 3840;
 let defaultCheckState = false;
 
-let testGet = browser.storage.sync.get(["minWidth", "maxWidth", "minCheck", "maxCheck"]);
-testGet.then(onGet);
+chrome.storage.sync.get(["minWidth", "maxWidth", "minCheck", "maxCheck"], onGet);

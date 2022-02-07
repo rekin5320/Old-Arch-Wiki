@@ -19,12 +19,10 @@ function onGet(data) {
     }
 
     console.log()
-
 }
 
 let defaultMinWidth = 960;
 let defaultMaxWidth = 3840;
 let defaultCheckState = false;
 
-const data = browser.storage.sync.get(["minWidth", "minCheck", "maxWidth", "maxCheck"]);
-data.then(onGet)
+chrome.storage.sync.get(["minWidth", "minCheck", "maxWidth", "maxCheck"], onGet);
