@@ -1,3 +1,6 @@
+# Important: this no longer works
+Since some time the parameter `useskinversion=1` no longer works.
+
 # Old-Arch-Wiki (Chrome extension)
 Automatically adds the `useskinversion=1` parameter to all Arch Wiki URLs to enable the good old full-width layout.
 
